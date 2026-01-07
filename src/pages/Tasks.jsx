@@ -138,6 +138,8 @@ export default function Tasks() {
               <th>Title</th>
               <th>Status</th>
               <th>Description</th>
+              <th>Created At</th>
+              <th>Updated At</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -154,6 +156,8 @@ export default function Tasks() {
                   </span>
                 </td>
                 <td>{t.description || "-"}</td>
+                <td>{t.created_at}</td>
+                <td>{t.updated_at}</td>
                 <td>
                   <button className="edit-btn" onClick={() => edit(t)}>Edit</button>
                   <button className="delete-btn" onClick={() => del(t.id)}>Delete</button>
