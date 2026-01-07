@@ -1,0 +1,145 @@
+.tasks-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #f44336;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+}
+
+.success {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.task-form button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.task-form button:hover {
+  background: #45a049;
+}
+
+.tasks-table-container {
+  overflow-x: auto;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tasks-table th,
+.tasks-table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tasks-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.tasks-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tasks-table tr.completed td {
+  color: #888;
+}
+
+.task-status {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #eee;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.task-status.pending {
+  color: #d32f2f;
+}
+
+.task-status.completed {
+  color: #388e3c;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 4px 8px;
+  margin-right: 4px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.edit-btn {
+  background: #2196f3;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #1976d2;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
